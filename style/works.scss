@@ -1,0 +1,251 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+html, body{
+  box-sizing: border-box;
+  z-index: -1;
+}
+
+header{
+  height: auto;
+  color: #ffffff;
+  background: #133D8D;
+  //background:  50%/ cover no-repeat url(/image/bg_ship.jpg);
+  
+  section{
+      width: 80%;
+      margin: 0 auto;
+      
+      .header__head{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 25px 0px;
+          //border-bottom: 0.5px solid #fff;
+          height: 5%;
+
+          .head__logo{
+              
+              img{
+                  width: 50%;
+                  object-fit: scale-down;
+              }
+          }
+          .header__menu{
+              width: 70%;
+              .menu{//ul
+                  
+                  list-style: none;
+                  display: flex;
+                  justify-content: space-between;
+                  a{
+                      text-decoration: none;
+                      color:#fff;
+                      font-weight: 500;
+                      font-size: 14px;    
+                      text-transform: uppercase;
+                  }
+                  a.tek{
+                    font-size: 16px;  
+
+                  }
+                  a:hover{
+                      border-bottom: 1px solid #fff;
+                  }
+              }
+          }
+      }
+  }
+}
+
+main{
+  height: auto;
+  color: #133D8D;
+  
+  .section__works{
+      height: auto;
+      background: #fff;
+      
+      .works__container{
+          width: 80%;
+          margin: 0 auto;
+          padding-top: 100px;
+          padding-bottom: 30px;
+
+          .works__header {
+            color: #333333;
+            h2{
+              font-weight: 300;
+              font-size: 36px;
+              letter-spacing: 0.05em;
+              text-transform: uppercase;
+            }
+            h5{
+                font-size: 14px;
+                margin-top: 50px;
+                a{
+                  color: #333;
+                  text-decoration: none;
+                  
+                }
+                a.tek{
+                    border-bottom: 1px solid #333;
+                }
+                a:hover{
+                  border-bottom: 1px solid #333;
+                }
+                span{
+                  margin: 0px 10px;
+                }
+            }
+          }
+          .works__content{
+              display: grid;
+              grid-template-columns: repeat(1, 1.5fr 1fr);
+              grid-column-gap: 50px;
+              margin-top: 40px;
+          }
+          .works__content_block {
+            color: #333333;
+            h5{
+              font-weight: 700;
+              font-size: 18px;
+              letter-spacing: 0.05em;
+              text-transform: uppercase;
+              padding-bottom: 30px;
+            }
+
+            .text{
+              margin-bottom: 60px;
+              
+            
+              p{
+                font-size: 14px;
+                font-weight: 300;
+                text-align: justify;
+                
+              }
+              
+            }
+            .text.important{
+              font-weight: 500;
+              padding-left: 50px;
+              border-left: 3px solid #BD0007;
+              p{
+                padding: 10px 0px;
+              }
+            }
+                 
+              
+             
+            .block__info_content{
+              
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              grid-template-rows: 1fr 1fr 1fr;
+              grid-column-gap: 20px;
+              grid-row-gap: 30px;
+              color: #fff;
+              background: #133D8D;
+              padding: 50px 60px;
+              p{
+                  font-size: 14px;
+                  font-weight: 300;
+                  span{
+                      font-size: 40px;
+                      font-weight: 500; 
+                      padding-right: 10px;
+                  }
+              }
+
+            }
+          }
+
+      }
+  }
+}
+
+footer{
+  height: auto;
+  background: #133D8D;
+  color: #fff;
+  
+  section{
+      width: 80%;
+      margin: auto;
+      padding: 60px 0px;
+      .footer__container{
+      
+          .footer__title{
+              text-align: center;
+          }
+          .footer__content{
+              display: grid;
+              grid-template-columns: repeat(4,1fr);
+              grid-row-gap: 20px;
+              margin-top: 40px;
+              .block{
+                  h5{
+                      font-weight: 500;
+                      font-size: 16px;
+                      letter-spacing: 0.05em;
+                      text-transform: uppercase;
+                      margin-bottom: 25px;
+                  }
+                  p{
+                      font-size: 14px;
+                      font-weight: 300;
+                      margin-bottom: 15px;
+                      a{
+                          color: #fff;
+                          text-decoration: none;
+                      }
+                      a:hover{
+                          border-bottom: 1px solid #fff;
+                      }
+                  }
+                  
+              }
+          }
+      }    
+  }
+}
+
+
+
+
+
+/* Portrait tablets and small desktops */
+@media (max-width: 1100px) {
+  header{
+      section{
+          .header__container{
+              .container__h1{
+                  font-size: 40px;
+              }
+          }
+      }
+  }
+
+  main{
+      .section__news{
+          .news__content{
+              grid-template-columns: repeat(2, 1fr);
+              grid-row-gap: 20px;
+
+          }
+      }
+  }
+}
+/* Landscape phones and portrait tablets */
+@media (max-width: 750px) {
+ 
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 500px) {
+ 
+}
