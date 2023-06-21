@@ -13,6 +13,7 @@ header{
   height: auto;
   color: #ffffff;
   background: #133D8D;
+  overflow: hidden;
   //background:  50%/ cover no-repeat url(/image/bg_ship.jpg);
   
   section{
@@ -26,7 +27,7 @@ header{
           padding: 25px 0px;
           //border-bottom: 0.5px solid #fff;
           height: 5%;
-
+          position: relative;
           .head__logo{
               
               img{
@@ -36,6 +37,7 @@ header{
           }
           .header__menu{
               width: 70%;
+              
               .menu{//ul
                   
                   list-style: none;
@@ -56,7 +58,83 @@ header{
                       border-bottom: 1px solid #fff;
                   }
               }
+              
           }
+          .hamburger__menu{
+            opacity: 0;
+            z-index: 20;
+            width: 26px;
+            height: 26px;
+            position: absolute;
+            right: 0;
+            
+            #menu__toggle {
+                opacity: 0;
+              }
+              
+              #menu__toggle:checked ~ .menu__box {
+                right: 0 !important;
+              }
+              .menu__btn {
+                z-index: 30;
+                width: 100%;
+                height: 100%;
+                cursor: pointer;
+                
+              }
+              .menu__btn > span,
+              .menu__btn > span::before,
+              .menu__btn > span::after {
+                display: block;
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                background-color: #ffffff;
+                transition-duration: .25s;
+              }
+              .menu__btn > span::before {
+                content: '';
+                top: -8px;
+              }
+              .menu__btn > span::after {
+                content: '';
+                top: 8px;
+              }
+              .menu__box {
+                display: block;
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 300px;
+                height: 100%;
+                margin: 0;
+                padding: 80px 0;
+                list-style: none;
+                background-color: #ECEFF1;
+                box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+                transition-duration: .25s;
+              }
+              .menu__box:not(:hover){
+                opacity: 0;
+                right: -100%;
+                position: relative;
+                display: hide;
+              }
+              
+              .menu__item {
+                display: block;
+                padding: 12px 24px;
+                color: #333;
+                font-family: 'Roboto', sans-serif;
+                font-size: 20px;
+                font-weight: 600;
+                text-decoration: none;
+                transition-duration: .25s;
+              }
+              .menu__item:hover {
+                background-color: #CFD8DC;
+              }
+        }
       }
   }
 }

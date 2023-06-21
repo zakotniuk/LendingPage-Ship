@@ -9,9 +9,6 @@ html, body {
   z-index: -1;
 }
 
-/* Portrait tablets and small desktops */
-/* Landscape phones and portrait tablets */
-/* Large desktops and laptops */
 /* Portrait tablets and medium desktops */
 @media (max-width: 1199px) {
   header section .header__head .header__menu .menu a {

@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans", sans-serif;
+}
+
+@media (max-width: 1199px) {
+  header section .header__head .header__menu .menu a {
+    font-size: 12px;
+  }
+  header section .header__head .header__menu .menu a.tek {
+    font-size: 14px;
+  }
+}
+/* Portrait tablets and small desktops */
+@media (max-width: 991px) {
+  main .section__works .works__container .works__content {
+    display: block;
+  }
+}
+@media (max-width: 767px) {
+  header section .header__head .header__menu {
+    display: none;
+  }
+  header section .header__head .hamburger__menu {
+    opacity: 1;
+  }
+}
+/* Landscape phones and smaller *//*# sourceMappingURL=contacts-media copy.css.map */
